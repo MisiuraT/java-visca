@@ -18,7 +18,6 @@ public class ViscaPort {
     }
 
     public void sendCommand(String cmd) throws SerialPortException {
-        String upcaseCmd = cmd.toUpperCase();
         String viscaCmd = Commands.getCommand(cmd);
         if(viscaCmd==null)
             return;
